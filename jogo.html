@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mata mosquitos</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="jogo.js"></script>
+</head>
+<body onresize="ajustarTamanhoPalco()">  <!--chamar a funcao sempre que o onresize for disparado-->
+
+	<div class="container">
+		<div class="row painel">
+			<div class="col">
+				<div class="row">
+					<div class="">
+						<img class="img-fluid mr-2" id="v1" src="imagens/coracao_cheio.png">
+						<img class="img-fluid mr-2" id="v2" src="imagens/coracao_cheio.png">
+						<img class="img-fluid" id="v3" src="imagens/coracao_cheio.png">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="cronometro">
+						Tempo restante: <span id="cronometro"></span>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="mortos">
+						Mosquitos mortos: <span id="morto"></span>
+					</div>
+				</div>
+
+				<div class="row mb-2">
+					<div class="mortos">
+						Nivel: <span id="nivel"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+
+	
+	<script>
+		
+		if(nivel==='normal'){
+			document.getElementById('nivel').innerHTML='Normal'
+		}else if(nivel==='dificil'){
+			document.getElementById('nivel').innerHTML='Dificil'
+		}else if(nivel==='chucknorris'){
+			document.getElementById('nivel').innerHTML='Chuck Norris'
+		}
+
+		
+		document.getElementById('morto').innerHTML=mortos
+		document.getElementById('cronometro').innerHTML=tempo // permite iniciar a aplicacao com o tempo correto ja estipulado; 
+													// nesse ponto tando o elemento com o id cronometro quanto a variavel tempo ja foram criadas
+		var criarMosquito=setInterval(function(){  // criar o elemento mosquito a cada 5s atraves da chamada da funcao posicaoRandomica() pelo mentodo setInterval
+		posicaoRandomica()
+		},tempoMosquito)
+		
+	</script>
+
+</body>
+</html>
