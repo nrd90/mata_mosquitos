@@ -47,7 +47,7 @@ function posicaoRandomica(){
 	if(document.getElementById('mosquito')){ // verificar se o elemento existe no dom
 		document.getElementById('mosquito').remove()  // se o elemento existe atualmente ele vai ser removido
 														// caso contrario a instrucao if sera ignorada	
-			if(vidas>3){ // verifica se se todas os pontos de vida foram perdidos; se sim ir para a pagina game over
+			if(vidas==3){ // verifica se se todas os pontos de vida foram perdidos; se sim ir para a pagina game over
 				window.location.href='derrota.html'
 			}else{  // senao processar a logica de decremento de pontos de vidas 
 				document.getElementById('v'+vidas).src='imagens/coracao_vazio.png'
