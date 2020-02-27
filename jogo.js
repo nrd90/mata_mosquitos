@@ -32,7 +32,7 @@ ajustarTamanhoPalco() // tem que ser chamada tb aqui no arquivo JS,
 var cronometro= setInterval(function(){
 	tempo--
 	document.getElementById('cronometro').innerHTML=tempo
-	if(tempo<0){
+	if(tempo==0){
 		clearInterval(cronometro)
 		clearInterval(criarMosquito)
 		window.location.href='vitoria.html'

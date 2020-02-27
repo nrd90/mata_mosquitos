@@ -75,6 +75,31 @@ body{
 .selecao{
 	width: 250px;
 }
+.select{
+	text-align: center;
+}
+.form-control{
+	padding: 3px 24px 3px 46px !important;
+
+}
+@keyframes mover{
+	0%{
+		top:0px;
+	}
+	50%{
+		top:40px;
+	}
+	100%{
+		top:0px;
+	}
+}
+#animacao_menu{
+	position: relative;
+	animation-name: mover;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
 
 footer .copyright p{
 	font-weight: bold;
@@ -109,10 +134,7 @@ footer .copyright p{
 		height: 60px;
 		width: 90%;
 	}
-	.btn-group-lg>.btn, .btn-lg{
-		font-size: 20px;
-	}
-
+	
 	.selecao{
 		width: 90%;
 		font-size: 40px;
@@ -131,6 +153,11 @@ footer .copyright p{
 	.mosquito2{
 		width: 130px;
 		height: 130px;
+	}
+	.form-control{
+		padding: 3px 30px 3px 50px !important;
+		font-size: 20px !important;
+		text-align: center !important;
 	}	
 }
 
@@ -163,10 +190,7 @@ footer .copyright p{
 		height: 50px;
 		width: 95%;
 	}	
-	.btn-group-lg>.btn, .btn-lg{
-		font-size: 20px;
-	}
-
+	
 	.selecao{
 		width: 90%;
 		text-align: center;
