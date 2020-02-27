@@ -19,15 +19,24 @@ body{
 }
 
 .mosquito0{
+	animation-name: animacao_mosquitoA;
+	animation-duration: 5s;
+	/*animation-iteration-count: 2s;*/
 	width: 50px;
 	height: 50px;
 }
 
 .mosquito1{
+	animation-name: animacao_mosquitoB;
+	animation-duration: 5s;
+	/*animation-iteration-count: 2s;*/
 	width: 70px;
 	height: 70px;
 }
 .mosquito2{
+	animation-name: animacao_mosquitoC;
+	animation-duration: 5s;
+	/*animation-iteration-count: 2s;*/
 	width: 30px;
 	height: 30px;
 }
@@ -106,7 +115,7 @@ body{
 		top:0px;
 	}
 }
-#animacao_menu{
+.animacao_menu{
 	position: relative;
 	-webkit-animation-name: mover;
 	        animation-name: mover;
@@ -116,13 +125,40 @@ body{
 	        animation-iteration-count: infinite;
 }
 
-
-footer .copyright p{
-	font-weight: bold;
-	font-size: 20px;
-	/*padding: 5px;
-	margin: 5px;*/
+@keyframes animacao_mosquitoA{
+	0%{
+		width: 50px;
+		height: 50px;
+	}
+	
+	100%{
+		width: 80px;
+		height: 80px;
+	}
 }
+@keyframes animacao_mosquitoB{
+	0%{
+		width: 70px;
+		height: 70px;
+	}
+	
+	100%{
+		width: 100px;
+		height: 100px;
+	}
+}
+@keyframes animacao_mosquitoC{
+	0%{
+		width: 30px;
+		height: 30px;
+	}
+	
+	100%{
+		width: 60px;
+		height: 60px;
+	}
+}
+
 
 /*----------media queries------------*/
 
