@@ -12,12 +12,12 @@ var tempoMosquito=2000
 var nivel=window.location.search   // da-nos somente parte da string que esta apos o ponto de interrogacao incluindo o ponto de interrogacao
 nivel=nivel.replace('?','') // metodo replace substitui todos os caracteres '?' por ''
 
-if(nivel==='normal'){
+if(nivel==='facil'){
 	tempoMosquito=2000
 }else if(nivel==='dificil'){
-	tempoMosquito=1500
-}else if(nivel==='chucknorris'){
 	tempoMosquito=1000
+}else if(nivel==='barryallen'){
+	tempoMosquito=800
 }				
 
 function ajustarTamanhoPalco(){  // funcao para ajustar o tamanho da tela conforme alteracoes na mesma, capturadas atraves do evento onresize
@@ -86,7 +86,11 @@ function posicaoRandomica(){
 		clearInterval(criarMosquito)  // apagar o set interval se o mosquito for clicado a tempo e executar de seguida
 									// a funcao posicaoRandomica para que um novo mosquito seja criado imediatamente.
 		posicaoRandomica() // se a funcao nao for chamada novamente aqui nao sera criado um novo mosquito na tela ao se clicar num mosquito
+		criarMosquito=setInterval(function(){  // criar o elemento mosquito a cada 5s atraves da chamada da funcao posicaoRandomica() pelo mentodo setInterval
+		posicaoRandomica()
+		},tempoMosquito)
 	}
 	document.body.appendChild(mosquito) // incluir o elemento criado anteriormente no body da pagina jogo.html
 }
+
 

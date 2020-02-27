@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 	<script src="jogo.js"></script>
 </head>
 <body onresize="ajustarTamanhoPalco()">  <!--chamar a funcao sempre que o onresize for disparado-->
@@ -47,12 +48,12 @@
 	
 	<script>
 		
-		if(nivel==='normal'){
-			document.getElementById('nivel').innerHTML='Normal'
+		if(nivel==='facil'){
+			document.getElementById('nivel').innerHTML='Fácil'
 		}else if(nivel==='dificil'){
-			document.getElementById('nivel').innerHTML='Dificil'
-		}else if(nivel==='chucknorris'){
-			document.getElementById('nivel').innerHTML='Chuck Norris'
+			document.getElementById('nivel').innerHTML='Difícil'
+		}else if(nivel==='barryallen'){
+			document.getElementById('nivel').innerHTML='Barry Allen'
 		}
 
 		

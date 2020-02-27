@@ -1,3 +1,8 @@
+html, body, #inicial{
+	height: 100%;
+	overflow-y: hidden;
+}
+
 html{
 	cursor: url(imagens/mata_mosca.png) 30 30, auto;
 }
@@ -10,6 +15,7 @@ body{
 	background-position: 30% 45%;
 	margin: 0;
 	background-size: cover;
+	font-family: Helvetica,Arial,sans-serif;
 }
 
 .mosquito0{
@@ -70,6 +76,13 @@ body{
 	width: 250px;
 }
 
+footer .copyright p{
+	font-weight: bold;
+	font-size: 20px;
+	/*padding: 5px;
+	margin: 5px;*/
+}
+
 /*----------media queries------------*/
 
 
@@ -82,25 +95,43 @@ body{
 		align-content: center;
 
 	}*/
-	.botao{
-		font-size: 30px;
-		height: 50px;
-		width: 80%;
-		opacity: 0.8;
+	.tamanho_imagem{
+		width: 1200px;
+		height: 900px;
+		margin-top: 300px;
 	}
-.mosquito0{
-	width: 70px;
-	height: 70px;
-}
 
-.mosquito1{
-	width: 90px;
-	height: 90px;
-}
-.mosquito2{
-	width: 110px;
-	height: 110px;
-}	
+	.tamanho_texto{
+		font-size: 200px;
+	}
+	.botao{
+		opacity: 1;
+		height: 60px;
+		width: 90%;
+	}
+	.btn-group-lg>.btn, .btn-lg{
+		font-size: 20px;
+	}
+
+	.selecao{
+		width: 90%;
+		font-size: 40px;
+	}
+
+	.mosquito0{
+		width: 80px;
+		height: 80px;
+	}
+
+	.mosquito1{
+		width: 100px;
+		height: 100px;
+	}
+
+	.mosquito2{
+		width: 130px;
+		height: 130px;
+	}	
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -112,24 +143,50 @@ body{
 		align-content: center;
 		
 	}*/
+	.tamanho_imagemMenu{
+		width: 1000px;
+		height: 900px;
+		margin-top: 550px;
+	}
+	.tamanho_imagem{
+		width: 1200px;
+		height: 900px;
+		margin-top: 300px;
+	}
+
+	.tamanho_texto{
+		font-size: 200px;
+	}
+
 	.botao{
-		font-size: 30px;
+		opacity: 1;
 		height: 50px;
-		width: 80%;
-		opacity: 0.8;
+		width: 95%;
 	}	
+	.btn-group-lg>.btn, .btn-lg{
+		font-size: 20px;
+	}
+
+	.selecao{
+		width: 90%;
+		text-align: center;
+		font-size: 40px;
+	}
+
 	.mosquito0{
-	width: 80px;
-	height: 80px;
+		width: 90px;
+		height: 90px;
+	}
+
+	.mosquito1{
+		width: 120px;
+		height: 120px;
+	}
+
+	.mosquito2{
+		width: 124px;
+		height: 140px;
+	}		
+
 }
 
-.mosquito1{
-	width: 100px;
-	height: 100px;
-}
-.mosquito2{
-	width: 120px;
-	height: 120px;
-}		
-
-}
