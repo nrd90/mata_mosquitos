@@ -82,6 +82,19 @@ body{
 	padding: 3px 24px 3px 46px !important;
 
 }
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@-webkit-keyframes mover{
+	0%{
+		top:0px;
+	}
+	50%{
+		top:40px;
+	}
+	100%{
+		top:0px;
+	}
+}
 @keyframes mover{
 	0%{
 		top:0px;
@@ -95,9 +108,12 @@ body{
 }
 #animacao_menu{
 	position: relative;
-	animation-name: mover;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	-webkit-animation-name: mover;
+	        animation-name: mover;
+	-webkit-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
 }
 
 
